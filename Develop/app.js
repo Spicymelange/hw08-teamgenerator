@@ -53,15 +53,15 @@ async function createEmp() {
     }
     else {
       teamComplete = true;
-      console("Great, let's create that webpage!");
+      console.log("Great, let's create that webpage!");
     }//write that file!!! "output"
   })
 };
 
 function empSwitch(res) {
-  inquirer.prompt([
+  return inquirer.prompt([
     {
-      type: "input",
+      type: "list",
       name: "emprole",
       message: "What is this employee's role?",
       choices: [
@@ -108,7 +108,7 @@ function createIntern() {
     }
   ];
 
-  inquirer.prompt(questions).then(function (answers) {
+  return inquirer.prompt(questions).then(function (answers) {
     //create manager instance
     var employee = new Intern(answers.name, answers.id, answers.email, answers.github);
     employees.push(employee);//add intern to employee array
@@ -139,7 +139,7 @@ function createEngineer() {
     }
   ];
 
-  inquirer.prompt(questions).then(function (answers) {
+  return inquirer.prompt(questions).then(function (answers) {
     //create manager instance
     var employee = new Engineer(answers.name, answers.id, answers.email, answers.github);
     employees.push(employee);//add engineer to employee array
