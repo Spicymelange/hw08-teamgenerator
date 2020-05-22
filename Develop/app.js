@@ -110,7 +110,7 @@ function createIntern() {
 
   return inquirer.prompt(questions).then(function (answers) {
     //create manager instance
-    var employee = new Intern(answers.name, answers.id, answers.email, answers.github);
+    var employee = new Intern(answers.name, answers.id, answers.email, answers.school);
     employees.push(employee);//add intern to employee array
   })
 }
