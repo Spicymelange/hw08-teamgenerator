@@ -1,0 +1,73 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image:url(http://bit.ly/2gPLxZ4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased; 
+}
+
+.employee-card{
+    background: inherit;
+}
+
+.blurred-box
+.blurred-box1
+.blurred-box2
+.blurred-box3{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: calc(50% - 175px);
+    margin: auto;
+    background: inherit;
+    border-radius: 2px;
+    border-color: antiquewhite;
+    overflow: hidden;
+}
+
+.blurred-box:after
+.blurred-box1:after
+.blurred-box2:after
+.blurred-box3:after{
+    content: '';
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(10px);
+}
+
+.header1
+.header2
+.header3{
+    position: absolute;
+}
+
+.card-header {
+    color: antiquewhite;
+}
+
+.text-center {
+    color: antiquewhite;
+}
+
+.team-heading {
+    background-color: inherit;
+}
